@@ -31,12 +31,12 @@ public class App {
 
         char lit1 = 'Z';
         int lit2 = 0xface;
-        int lit3 = 012;
+        int lit3 = 012; //octal literal
         long lit4 = 80L;
         float lit5 = 44e-1f, lit6 = 5.5f;
         double lit7 = 8.88e1;
         double lit8 = 99.9;
-        int sum = (((int) lit1) + lit2 + lit3 + ((int) lit4) + ((int) lit5) + ((int) lit6) + ((int) lit7) + ((int) lit8));
+        int sum = (((int) lit1) + lit2 + lit3 + ((int) lit4) + ((int) lit5) + ((int) lit6) + ((int) lit7) + ((int) lit8));//double and other need int before the chosen names
         System.out.println(sum);
     }
 
@@ -146,9 +146,19 @@ public class App {
     //todo Task 10
     public void transposedNumbers(){
         // input your solution here
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Number: ");
+        int number = scanner.nextInt();
+        while(number != 0)
+        {
+            System.out.print(number % 10);
+            number = number / 10;  //also possible ""number/= 10"
+        }
+        System.out.println("");
     }
 
+// did this with the help of this forum post https://www.java-forum.org/thema/zahl-umdrehen.168457/ I DIDN´T take any code from it!
+    //on they forum they used loops and so on which were not asked for in Task 10
 
     public static void main(String[] args){
         App exercise1 = new App();
