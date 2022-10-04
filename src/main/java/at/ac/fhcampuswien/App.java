@@ -53,23 +53,23 @@ public class App {
     public void swapTwoNumbers() {
         // input your solution here
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Before Swap");
-        System.out.println("x:");
+        System.out.println("Before Swap:");
+        System.out.print("x: ");
         int x = scanner.nextInt();
-        System.out.println("y:");
+        System.out.print("y: ");
         int y = scanner.nextInt();
         x = x ^ y ^ (y = x);
-        System.out.println("After Swap");
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
+        System.out.println("After Swap:");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
     }
     //todo Task 6
     public void compareTwoNumbers(){
         // input your solution here
         Scanner scanner = new Scanner(System.in);
-        System.out.print("n1:");
+        System.out.print("n1: ");
         int n1 = scanner.nextInt();
-        System.out.print("n2:");
+        System.out.print("n2: ");
         int n2 = scanner.nextInt();
 
         if (n1 > n2) {
@@ -122,7 +122,7 @@ public class App {
                 System.out.println("Your Commission Rate was set to 0.04");
                 break;
             default:
-                System.out.println("Your Commission Rate was set to 0.00");
+                System.out.println("Your Commission Rate was set to 0.0");
                 break;
         }
     }
@@ -131,11 +131,11 @@ public class App {
     public void leapyear() {
         // input your solution here
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Year:");
+        System.out.print("Year: ");
         int year = scanner.nextInt();
-        if ((year % 4 != 0) || (year % 100 == 0 && year % 400 != 0))
+        if ((year % 4 != 0) || (year %100 == 0 && year %400 != 0))
         {
-            System.out.println("Not Leapyear");
+            System.out.println("Not a Leapyear");
         }
         else
         {
